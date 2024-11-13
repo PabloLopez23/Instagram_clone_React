@@ -1,42 +1,82 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.viewtrailer {
+    min-height: 700px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Alinea el contenido horizontalmente al centro */
+    align-items: center; /* Alinea el contenido verticalmente al centro */
+    flex-direction: column; /* Asegura que el contenido esté en columna */
+    border-radius: 15px;
+    overflow: hidden;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .boton {
+    background-color: #1db954;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 15px 20px; /* Aumentado el tamaño del botón */
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 20px; /* Añadido para separar del borde */
+    border-radius: 30px;
+    transition: background-color 0.3s;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  
+  .boton:hover {
+    background-color: #1ed760;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+  
+  .reproductor {
+    width: 80%; /* Ajusta el tamaño del reproductor para centrarlo */
+    height: 800px; /* Aumentado el tamaño del reproductor */
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 auto; /* Centra el reproductor horizontalmente */
+  }
+  
+  img {
+    border-radius: 15px;
+  }
+  
+  h1, h2, h3, h4 {
+    color: #1db954;
+  }
+  
+  /* Título más grande */
+  h2 {
+    text-transform: uppercase;
+    color: #1db954; /* Color similar a Spotify */
+    font-size: 4rem; /* Tamaño de fuente ajustado para ser el doble de grande */
+    text-align: center; /* Centra el título */
+  }
+  
+  /* Centrando el formulario de búsqueda */
+  form {
+    display: flex;
+    justify-content: center; /* Centra el formulario horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    gap: 10px; /* Añadido para el espacio entre input y botón */
+  }
+  
+  form input {
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid #1db954;
+  }
+  
+  form button {
+    background-color: #1db954;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #1ed760;
+  }
+  
